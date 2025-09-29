@@ -1,6 +1,5 @@
 # Welcome to Assignment 04
 This document is made to compare formatting between C and Python.
-BLOCKQUOTE THING HERE?
 
 ## Integer Formatting
 ### C99 printf
@@ -133,16 +132,16 @@ one table comparing output of C99 printf and Python print for each type <br>
 collumns: type, example code (C), example code (python), output
 
 | Type | Example Code (C) | Example Cpde (Python) | Output |
-|--|--|--|
-| int | printf("%5d", 42); |
-| int | printf("%+5d", 42); |
-| int | printf("%05d", 42); |
-| float | printf("%8.2f", 3.14159); |
-| float | printf("%e", 3.14159); |
-| string | printf("%-10s!", "Hello"); |
-| string | printf("%10s!", "Hello"); |
+|--|--|--|--|
+| int | `printf("%5d", 42);` | `"%5d" % 42` | `   42` |
+| int | `printf("%+5d", 42);` | `"%+5d" % 42` | `  +42` |
+| int | `printf("%05d", 42);` | `"%05d" % 42` | `00042` |
+| float | `printf("%8.2f", 3.14159);` | `"%8.2f" % 3.14159` | `    3.14` |
+| float | `printf("%e", 3.14159);` | `"%e" % 3.14159` | `3.141590e+00` |
+| string | `printf("%-10s!", "Hello");` | `"%-10s" % "Hello"` | `Hello     !` |
+| string | `printf("%10s!", "Hello");` | `"%10s" % "Hello"` | `     Hello!` |
 
-
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg)
 
 ## Links
 C99 printf reference: https://en.cppreference.com/w/c/io/fprintf <br>
